@@ -9,5 +9,22 @@
 		{
 			"path": "../sphinx-book-theme"
 		}
-	]
+	],
+	"settings": {
+		"python.pythonPath": "/Users/phil/a50037/envs/nested/bin/python3.7",
+		"python.condaPath": "~/a50037/condabin/conda"
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Python: Current File",
+				"type": "python",
+				"request": "launch",
+				"program": "quantecon_nested/runbook.py",
+				"console": "integratedTerminal",
+				"args":["build","quantecon_nested/mini_book"]
+			}
+		]
+	}
 }
