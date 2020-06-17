@@ -38,7 +38,6 @@ jobs:
     - name: Build the book
       shell: bash -l {0}
       run: |
-        pip install -e . --upgrade
         ORIG_DIR="${PWD}"
         mkdir -p html_out
         cd quantecon_flat/mini_book
