@@ -1,7 +1,7 @@
 ---
 jupytext:
   cell_metadata_filter: all
-  notebook_metadata_filter: all,-toc,-latex_envs
+  notebook_metadata_filter: all,-toc,-latex_envs,-language_info
   text_representation:
     extension: .md
     format_name: myst
