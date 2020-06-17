@@ -13,6 +13,7 @@ dependencies:
   - nbclient
   - sqlalchemy
   - nbdime
+  - git
   - pip:
     - sphinxcontrib-bibtex
     - sphinx-copybutton
