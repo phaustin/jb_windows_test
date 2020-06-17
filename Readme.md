@@ -1,6 +1,6 @@
 # test for utf8 encoding
 
-The section [getting_started.md](quantecon_flat/mini_book/docs/getting_started.md) has
+The section [getting_started.md](quantecon_flat/mini_book/docs/about_py.md) has
 several unicode characters that will raise an exception if the read/write for
 input, cache and output is not encoded in utf-8
 
