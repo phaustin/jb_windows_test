@@ -239,62 +239,6 @@ Here\'s an arbitrary program we can use:
 
 On that page, you\'ll see the following code
 
-```{code-cell} ipython3
-import numpy as np
-import matplotlib.pyplot as plt
-%matplotlib inline
-
-# Fixing random state for reproducibility
-np.random.seed(19680801)
-
-# Compute pie slices
-N = 20
-θ = np.linspace(0.0, 2 * np.pi, N, endpoint=False)
-radii = 10 * np.random.rand(N)
-width = np.pi / 4 * np.random.rand(N)
-colors = plt.cm.viridis(radii / 10.)
-
-ax = plt.subplot(111, projection='polar')
-ax.bar(θ, radii, width=width, bottom=0.0, color=colors, alpha=0.5)
-
-plt.show()
-```
-
-Don\'t worry about the details for now --- let\'s just run it and see
-what happens.
-
-The easiest way to run this code is to copy and paste it into a cell in
-the notebook.
-
-Hopefully you will get a similar plot.
-
-### Working with the Notebook
-
-Here are a few more tips on working with Jupyter notebooks.
-
-#### Tab Completion
-
-In the previous program, we executed the line `import numpy as np`
-
--   NumPy is a numerical library we\'ll work with in depth.
-
-After this import command, functions in NumPy can be accessed with
-`np.function_name` type syntax.
-
--   For example, try `np.random.randn(3)`.
-
-We can explore these attributes of `np` using the `Tab` key.
-
-For example, here we type `np.ran` and hit Tab
-
-```{figure} /_static/lecture_specific/getting_started/nb6.png
-:scale: 50%
-```
-
-Jupyter offers up the two possible completions, `random` and `rank`.
-
-In this way, the Tab key helps remind you of what\'s available and also
-saves you typing.
 
 (gs_help)=
 
