@@ -30,7 +30,7 @@ jobs:
       uses: goanpeca/setup-miniconda@v1.1.2
       with:
         environment-file: environment.yml
-        activate-environment: newbuild
+        activate-environment: june21
         python-version: 3.7
         auto-activate-base: false
 
@@ -47,6 +47,10 @@ jobs:
         cd ${ORIG_DIR}/quantecon_nested
         jupyter-book build mini_book
         cp -a mini_book/_build/html "${ORIG_DIR}/html_out/nested_test"
+        cd ${ORIG_DIR}/multi_level
+        jupyter-book build toc
+        cp -a toc/_buil/html "${ORIG_DIR}"/html_out/multilevel_test
+
         
 
 

@@ -1,4 +1,4 @@
-name: newbuild
+name: june21
 channels:
   - eoas_ubc
   - conda-forge
