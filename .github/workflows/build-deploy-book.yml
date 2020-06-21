@@ -44,9 +44,10 @@ jobs:
         jupyter-book build docs
         echo "changing to ${ORIG_DIR}/html_out/flat_test"
         cp -a docs/_build/html "${ORIG_DIR}/html_out/flat_test"
-        cd "${ORIG_DIR}/html_out/flat_test"
-        echo "now in ${CWD}"
-        ls -lrtd *
+        cd ${ORIG_DIR}/quantecon_nested
+        jupyter-book build mini_book
+        cp -a mini_book/_build/html "${ORIG_DIR}/html_out/nested_test"
+        
 
 
     # Push the book's HTML to github-pages
