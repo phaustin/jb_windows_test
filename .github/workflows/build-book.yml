@@ -1,4 +1,4 @@
-name: build-deploy-book
+name: build-book
 
 # Only run this when the master branch changes
 on:
